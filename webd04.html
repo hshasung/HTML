@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디자인기능사 레이아웃 A-2</title>
+    <title>웹디자인기능사 레이아웃 A-4</title>
     <style>
         * {
             margin: 0;
@@ -15,61 +15,65 @@
         }
         #header {
             width: 100%;
+            height: 100px;
             display: flex;
         }
         #header .logo {
             width: 20%;
             height: 100px;
-            background-color: #0077ff;
+            background-color: #00c3ff;
         }
         #header .nav {
             width: 80%;
             height: 100px;
-            background-color: #6089b8;
+            background-color: #06215f;
         }
         #slider {
             width: 100%;
             height: 300px;
-            background-color: #26beff;
+            background-color: #7d0b0b;
         }
-        #main {
+        #contents {
             width: 100%;
             display: flex;
         }
-        #main .contents1 {
+        #contents .content1 {
             width: 33.3333%;
             height: 200px;
-            background-color: #26ff59;
+            background-color: #3a925f;
         }
-        #main .contents2 {
+        #contents .content2 {
             width: 33.3333%;
             height: 200px;
-            background-color: #a5ff26;
+            background-color: #03441f;
         }
-        #main .contents3 {
+        #contents .content3 {
             width: 33.3333%;
             height: 200px;
-            background-color: #f1ff26;
+            background-color: #24ef79;
         }
         #footer {
             width: 100%;
             display: flex;
-           
         }
         #footer .footer1 {
-            width: 20%;
-            height: 100px;
-            background-color: #f04deb;
+            width: 80%;
+            
+        }
+        #footer .footer1 .footer1-1 {
+            width: 100%;
+            height: 50px;
+            background-color: #351010;
+        }
+        #footer .footer1 .footer1-2 {
+            width: 100%;
+            height: 50px;
+            background-color: #26001c;
         }
         #footer .footer2 {
-            width: 60%;
-            height: 100px;
-            background-color: #b74df0;
-        }
-        #footer .footer3 {
             width: 20%;
             height: 100px;
-            background-color: #f04da4;
+            background-color: #d03131;
         }
     </style>
 </head>
@@ -83,20 +87,22 @@
 
         <article id="slider">
         </article>
-        <!--//slider -->
-        <main id="main">
-            <section class="contents1"></section>
-            <section class="contents2"></section>
-            <section class="contents3"></section>
+        <!--//slider-->
+        <main id="contents">
+            <section class="content1"></section>
+            <section class="content2"></section>
+            <section class="content3"></section>
         </main>
-        <!--//main-->
-
+        <!--//content-->
         <footer id="footer">
-            <div class="footer1"></div>
+            <div class="footer1">
+                <div class="footer1-1"></div>
+                <div class="footer1-2"></div>
+            </div>
             <div class="footer2"></div>
-            <div class="footer3"></div>
         </footer>
         <!--//footer-->
     </div>
+    
 </body>
 </html>

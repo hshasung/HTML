@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인 레이아웃</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 100%;
+        }
+        #main {
+            width: 100%;
+            height: calc(100vh - 100px);
+            background-color: #8d8282;
+            display: flex;
+        }
+        #footer {
+            width: 100%;
+            display: flex;
+        }
+        #footer .footer1 {
+            width: 200px;
+            height: 100px;
+            background-color: #7f6565;
+        }
+        #footer .footer2 {
+            width: calc(100% - 200px);
+            height: 100px;
+            background-color: #1c1818;
+        }
+        #footer .footer2 .footer2-1 {
+            width: 100%;
+            height: 50px;
+            background-color: #873333;
+        }
+        #footer .footer2 .footer2-2 {
+            width: 100%;
+            height: 50px;
+            background-color: #c07070;
+        }
+        #header {
+            width: 200px;
+            height: 100%;
+            background-color: #7e6161;
+        }
+        #header .logo {
+            width: 100%;
+            height: 10%;
+            background-color: #cf4d4d;
+        }
+        #header .nav {
+            width: 100%;
+            height: 90%;
+            background-color: #412d2d;
+        }
+        #contents {
+            width: 400px;
+            height: 100%;
+            background-color: #606060;
+        }
+        #contents .wow {
+            width: 100%;
+            height: 15%;
+            background-color: #02d2e1;
+        }
+        #contents .yes {
+            width: 100%;
+            height: 35%;
+            background-color: #05ff05;
+        }
+        #contents .no {
+            width: 100%;
+            height: 35%;
+            background-color: #035797;
+        }
+        #contents .why {
+            width: 100%;
+            height: 15%;
+            background-color: #afaa0a;
+        }
+        #slider {
+            width: calc(100% - 600px);
+            height: 100%;
+            background-color: #b37f7f;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <main id="main">
+            <div id="header">
+                <h1 class="logo"></h1>
+                <nav class="nav"></nav>
+            </div>
+            <div id="contents">
+                <div class="wow"></div>
+                <div class="yes"></div>
+                <div class="no"></div>
+                <div class="why"></div>
+            </div>
+            <div id="slider"></div>
+        </main>
+        <footer id="footer">
+            <div class="footer1"></div>
+            <div class="footer2">
+                <div class="footer2-1"></div>
+                <div class="footer2-2"></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
