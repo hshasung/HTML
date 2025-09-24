@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+        #wrap {
+            width: 100%;
+            height: 900px;
+        }
+        #main {
+            width: 100%;
+            height: 720px;  
+            background-color: #f2f5f5;
+            align-content: center;
+        }
+        .main-box {
+            width: 980px;
+            height: 500px;
+            padding-block: 20px;
+            margin: 0 auto;
+            display: flex;
+        }
+        .mainbox1 {
+            width: 550px;
+            padding-top: 100px;
+        }
+
+        .mainbox1 img {
+            margin-left: -32px;
+        }
+        .loginbox {
+            width: 396px;
+            height: 350px;
+            background-color: #ffffff;
+            margin-top: 90px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .email {
+            width: 330px;
+            height: 40px;
+            font-size: 17px;
+            border-radius: 6px;
+            margin-left: 20px;
+            margin-top: 20px;
+            padding-left: 20px;
+            outline: none;
+            border: 1px solid #c8c8c8;
+        }
+        .email:focus {
+            border: 1px solid #0866ff;
+        }
+        .email::placeholder {
+            color: #969696;
+        }
+        .password {
+            width: 330px;
+            height: 40px;
+            font-size: 17px;
+            border-radius: 6px;
+            margin-left: 20px;
+            margin-top: 15px;
+            padding-left: 20px;
+            outline: none;
+            border: 1px solid #c8c8c8;
+        }
+        .password:focus {
+            border: 1px solid #0866ff
+        }
+        .password::placeholder {
+            color: #969696;
+        }
+        .login {
+            width: 350px;
+            height: 40px;
+            background-color: #0866ff;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 500;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        #h2 {
+            font-weight: 400;
+            font-size: 28px;
+        }
+        #footer {
+            width: 100%;
+            height: 180px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <main id="main">
+            <div class="main-box">
+                <div class="mainbox1">
+                    <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" style="width: 350px;">
+                    <h2 id="h2">Facebook에서 전세계에 있는 친구, 가족,<br> 지인들과 함께 이야기를 나눠보세요.</h2>                  
+               </div>
+                <div class="loginbox">
+                    <input type="email" placeholder="이메일 또는 전화번호" class="email">
+                    <input type="password" placeholder="비밀번호" class="password">
+                    <input type="submit" value="로그인" class="login">
+                </div>
+            </div>
+        </main>
+        <footer id="footer"></footer>
+        
+    </div>
+    </div>
+</body>
+</html>
